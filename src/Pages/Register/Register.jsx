@@ -14,6 +14,14 @@ const Register = () => {
                             <input type="text" name="username" id="username" placeholder="Username" className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-100 text-gray-100 focus:border-violet-400" />
                         </div>
                         <div className="space-y-1 text-sm">
+                            <label className="block text-gray-400">Email</label>
+                            <input type="email" name="email" id="email" placeholder="email" className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-100 text-gray-100 focus:border-violet-400" />
+                        </div>
+                        <div className="space-y-1 text-sm">
+                            <label className="block text-gray-400">Photo URL</label>
+                            <input type="text" name="photo" id="photo" placeholder="photo url" className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-100 text-gray-100 focus:border-violet-400" />
+                        </div>
+                        <div className="space-y-1 text-sm">
                             <label className="block text-gray-400">Password</label>
                             <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 bg-gray-100 text-gray-100 focus:border-violet-400" />
                         </div>

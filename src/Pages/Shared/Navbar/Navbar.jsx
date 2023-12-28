@@ -28,7 +28,7 @@ const Navbar = () => {
         </li>
         <li className="list-none ml-5 text-lg rounded text-rose-600 font-semibold">
             <NavLink
-                to="/prents"
+                to="/features"
                 style={({ isActive, isTransitioning }) => {
                     return {
                         fontWeight: isActive ? "bold" : " ",
@@ -42,14 +42,32 @@ const Navbar = () => {
                 }}
             >
                 <div tabIndex={0} role="button" className=" px-2" onClick={toggoleDropdown}>
-                    Prents
+                    Features
                 </div>
             </NavLink>
             <ul tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${isDropdown ? 'block' : 'hidden'}`}>
-                <li> <a> Profile  </a> </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
+                <li> <a> Club History  </a> </li>
+                <li><a>Our Team</a></li>
+                <li><a>Join Club</a></li>
             </ul>
+        </li>
+        <li className="list-none ml-5 text-lg rounded text-rose-600 font-semibold">
+            <NavLink
+                to="/social"
+                style={({ isActive, isTransitioning }) => {
+                    return {
+                        fontWeight: isActive ? "bold" : " ",
+                        // padding: isActive ? "4px" : " ",
+                        rounded: isActive ? "lg" : " ",
+                        color: isActive ? "white" : "",
+                        backgroundColor: isActive ? "#191970" : "",
+                        borderBottom: isActive ? "4px solid #3F3FD4" : "",
+                        viewTransitionName: isTransitioning ? "slide" : "",
+                    };
+                }}
+            >
+                Social Activity
+            </NavLink>
         </li>
         <li className="list-none ml-5 text-lg rounded text-rose-600 font-semibold">
             <NavLink
